@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Stock Profile: help and contact</title>
+  <meta name="description" content="Help for Stock Profile, the app that shows the gain or loss on the shares you bought.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Barlow+Condensed:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="band">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="icon-180.png" alt=""><span>Stock Profile</span></a>
+      <div class="tape" aria-hidden="true"><i style="flex:5"></i><i style="flex:3"></i><i class="down" style="flex:2"></i><i style="flex:2"></i><i style="flex:1"></i></div>
+      <p>Enter the shares you bought and sold. Stock Profile looks up each stock's name and latest price and shows your gain or loss, stock by stock and in total. Export it all to Excel.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="contact">
+      <h2>Get help</h2>
+      <p>Email <a href="mailto:sy@sycheng.com?subject=Stock%20Profile">sy@sycheng.com</a>. Say which stock code and market you used and what happened, and include a screenshot if you can.</p>
+    </section>
+
+    <h1>Questions</h1>
+
+    <h2>Which markets are covered?</h2>
+    <p>Hong Kong, the US (NYSE and Nasdaq), London, Shanghai and Shenzhen. The app guesses the market from the code: up to 5 digits is Hong Kong (700 becomes 0700), 6 digits is Shanghai or Shenzhen, letters are US. Tap a market to change it. Choose <b>Other</b> to enter any Yahoo Finance symbol, such as 7203.T for Toyota in Tokyo.</p>
+
+    <h2>How current are the prices?</h2>
+    <p>Prices come from Yahoo Finance and are usually about 15 minutes behind while a market is open. When it's closed you see the last closing price. The app refreshes when you open it, when you pull down on the list, and every few minutes while a market is open. The time of the last update is shown under the totals.</p>
+
+    <h2>How is the gain or loss worked out?</h2>
+    <p>Each purchase costs the quantity times the price plus any fees you entered. The unrealised gain is the shares you still hold at the latest price, minus what those shares cost. When you record a sale, you pick the purchase it comes from; the realised gain is what you received (after fees) minus the cost of the shares sold. The average cost on the list covers only the shares you still hold.</p>
+
+    <h2>What does the coloured bar mean?</h2>
+    <p>It splits your holdings by market value, largest first. Green parts are up on what you paid, red parts are down. In Settings you can turn on <b>Red for gains</b> if you're used to red meaning up.</p>
+
+    <h2>My holdings are in different currencies</h2>
+    <p>Each stock is shown in its own currency. The totals at the top are converted into the currency you choose in Settings (Hong Kong dollars to start with), at the latest exchange rate. If a price or rate hasn't loaded yet, the app says how many stocks are left out of the totals.</p>
+
+    <h2>How do I get my data into Excel?</h2>
+    <p>Tap the share button at the top of the list, or <b>Export to Excel</b> in Settings. You get one workbook with a summary of every stock, all your purchases and all your sales. Save it to Files, email it or AirDrop it.</p>
+
+    <h2>How do I move to a new phone?</h2>
+    <p>Your trades are stored only on your phone. Export to Excel and keep the file somewhere safe. On the new phone, install Stock Profile and choose <b>Restore from an Excel export</b> (or <b>Import from Excel</b> in Settings) and pick that file.</p>
+
+    <h2>Is this investment advice?</h2>
+    <p>No. Stock Profile is a record-keeping tool for your own use. Check figures with your broker before making decisions or filing taxes.</p>
+  </main>
+
+  <footer>
+    <div class="wrap"><a href="privacy.html">Privacy policy</a></div>
+  </footer>
+</body>
+</html>

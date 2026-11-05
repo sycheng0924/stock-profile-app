@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Stock Profile privacy policy</title>
+  <meta name="description" content="What Stock Profile sends to get prices, and what stays on your phone.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Barlow+Condensed:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="band">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="icon-180.png" alt=""><span>Stock Profile</span></a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Privacy policy</h1>
+    <p class="meta">Effective 6 November 2026. Applies to the Stock Profile app for iPhone and Android.</p>
+
+    <p>In short: your trades stay on your phone. To get prices, the app sends only stock symbols (such as 0700.HK or AAPL) and currency pairs to our server. There are no accounts, no analytics, no advertising and no tracking.</p>
+
+    <h2>What stays on your phone</h2>
+    <p>The stock codes, quantities, dates, prices, fees and notes you enter, the last prices fetched, and your settings are stored in the app's own storage on your phone. They are never sent anywhere. Delete the app to remove them.</p>
+
+    <h2>Getting prices</h2>
+    <p>To show names and prices, the app sends our server the symbols of the stocks you hold or are looking up, and the currency pairs needed for your totals (such as USDHKD). It does not send quantities, prices you paid, dates or any identifier. Our server is a Cloudflare Worker run by the developer. It asks <a href="https://finance.yahoo.com/">Yahoo Finance</a> for the prices, keeps each price for about a minute so others asking for the same stock get it faster, and stores nothing else. As with any internet request, Cloudflare and Yahoo can see your device's IP address.</p>
+
+    <h2>Excel export and import</h2>
+    <p>An export is created on your phone and handed to the share sheet; it goes only where you send it. An import reads only the file you pick.</p>
+
+    <h2>What we collect</h2>
+    <p>We don't collect personal data. We don't sell or share anything, and the app contains no third-party analytics or advertising code.</p>
+
+    <h2>Children</h2>
+    <p>The app isn't directed at children and collects no personal data from anyone.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Questions about this policy: <a href="mailto:sy@sycheng.com?subject=Stock%20Profile%20privacy">sy@sycheng.com</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap"><a href="./">Help and contact</a></div>
+  </footer>
+</body>
+</html>

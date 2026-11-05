@@ -1,0 +1,85 @@
+:root {
+  --band: #1f3fa6;
+  --band-end: #14254f;
+  --ink: #0f1e2e;
+  --muted: #55636f;
+  --mist: #edf0f2;
+  --paper: #ffffff;
+  --line: #d5dce1;
+  --link: #1f3fa6;
+  --up: #0b7a43;
+  --down: #b8322a;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --band: #1a3080;
+    --band-end: #0b1117;
+    --ink: #e6ebef;
+    --muted: #97a5b0;
+    --mist: #0b1117;
+    --paper: #141c24;
+    --line: #26323d;
+    --link: #8ca8ff;
+    --up: #45c483;
+    --down: #ff7a6e;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --band: #1a3080;
+  --band-end: #0b1117;
+  --ink: #e6ebef;
+  --muted: #97a5b0;
+  --mist: #0b1117;
+  --paper: #141c24;
+  --line: #26323d;
+  --link: #8ca8ff;
+  --up: #45c483;
+  --down: #ff7a6e;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--mist);
+  color: var(--ink);
+  font: 18px/1.6 "Barlow", system-ui, sans-serif;
+}
+.band {
+  background: linear-gradient(180deg, var(--band), var(--band-end));
+  color: #fff;
+  padding: 40px 16px 44px;
+}
+.wrap { max-width: 680px; margin: 0 auto; }
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+  text-decoration: none;
+  font: 600 36px/1 "Barlow Condensed", system-ui, sans-serif;
+}
+.brand img { width: 64px; height: 64px; border-radius: 15px; }
+/* The portfolio bar from the app's home screen. */
+.tape { display: flex; gap: 4px; height: 8px; margin-top: 24px; max-width: 420px; }
+.tape i { display: block; border-radius: 2px; background: #45c483; }
+.tape i.down { background: #ff7a6e; }
+.band p { margin: 20px 0 0; max-width: 34em; opacity: 0.95; }
+main { padding: 8px 16px 64px; }
+h1, h2 { font-family: "Barlow Condensed", system-ui, sans-serif; font-weight: 600; line-height: 1.15; }
+h1 { font-size: 40px; margin: 40px 0 8px; }
+h2 { font-size: 27px; margin: 36px 0 8px; }
+p, li { max-width: 38em; }
+a { color: var(--link); text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--link); outline-offset: 3px; border-radius: 4px; }
+.contact {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-top: 32px;
+}
+.contact h2 { margin-top: 0; }
+.meta { color: var(--muted); }
+footer { border-top: 1px solid var(--line); padding: 24px 16px 40px; color: var(--muted); font-size: 16px; }
